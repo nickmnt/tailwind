@@ -2,10 +2,13 @@
   <div class="bg-white border rounded-lg overflow-hidden">
     <img :src="property.imageUrl" :alt="property.imageAlt">
     <div class="p-6">
-      <div class="text-gray-600 text-xs uppercase font-semibold tracking-wide">
-        {{ property.beds }} beds &bull; {{ property.baths }} baths
+      <div class="flex items-baseline">
+        <span class="bg-teal-200 text-teal-800 px-2 mr-2 rounded-full uppercase font-semibold tracking-wide text-xs inline-block">new</span>
+        <div class="text-gray-600 text-xs uppercase font-semibold tracking-wide">
+          {{ property.beds }} beds &bull; {{ property.baths }} baths
+        </div>
       </div>
-      <h4 class="font-semibold text-lg leading-tight truncate">{{ property.title }}</h4>
+      <h4 class="m1-1 font-semibold text-lg leading-tight truncate">{{ property.title }}</h4>
       <div class="mt-1">
         {{ property.formattedPrice }}
         <span class="text-gray-600 text-sm"> / wk</span>
