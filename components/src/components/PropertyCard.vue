@@ -2,7 +2,9 @@
   <div class="bg-white border rounded-lg overflow-hidden">
     <!-- Commented line for IE11 -->
     <!-- <div class="h-48 bg-cover bg-center" :style="{ backgroundImage: `url('${property.imageUrl}')`}"></div> -->
-    <img class="h-48 w-full object-cover" :src="property.imageUrl" :alt="property.imageAlt">
+    <div class="relative pb-2/3">
+      <img class="absolute top-0 h-full w-full object-cover" :src="property.imageUrl" :alt="property.imageAlt">
+    </div>
     <div class="p-6">
       <div class="flex items-baseline">
         <span class="bg-teal-200 text-teal-800 px-2 mr-2 rounded-full uppercase font-semibold tracking-wide text-xs inline-block">new</span>
